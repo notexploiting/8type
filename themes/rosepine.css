@@ -1,0 +1,14 @@
+body {
+    background-color: #191724; /* base */
+    color: #908caa; /* text */
+}
+
+.area {
+    background-color: #1f1d2e; /* surface */ 
+}
+
+#input-field, #reset, #themeModalButton {
+    background-color: #191724; /* base */
+    color: #908caa; /* text */
+    border-color: #6e6a86; /* muted */
+}

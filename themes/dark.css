@@ -1,0 +1,13 @@
+body {
+    background-color: #1f1c1c;
+    color: #70706c;
+}
+
+.area {
+    background-color: #131212;
+}
+
+#input-field, #reset, #themeModalButton {
+    background-color: #131212;
+    color: #70706c;
+}
