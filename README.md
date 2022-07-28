@@ -6,3 +6,4 @@ things to work on
 - [x] the JavaScript behind the tests
 - [ ] test length selector
 - [ ] more seemless way to add themes
+- [ ] overall formatting and layout
