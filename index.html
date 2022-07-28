@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <link id="theme" rel="stylesheet" href="themes/light.css">
+        <link rel="icon" href="img/icon.png">
+        <script src="app.js" async></script>
+        <!-- change the base href to the local host while testing, otherwise to the address of the website itself -->
+        <base href="http://127.0.0.1:5500/">
+        <title>type</title>
+    </head>
+
+    <style>
+        #themeModal {
+            display: none;
+        }
+    </style>
+
+    <body onload="reset()">
+        <header class="title">
+            <h1>type</h1>
+        </header>
+        
+        <main>
+            <section class="area">
+                <!-- display score -->
+                <div id="wpm-acc">
+                    wpm: X / acc: X
+                </div>
+
+                <!-- the prompt to be typed -->
+                <div id="paragraph-wrapper">
+                    <p id="paragraph">the quick brown fox jumps over the lazy dog</p>
+                </div>
+
+                <!-- input area -->
+                <div class="input-wrapper">
+                    <textarea id="input-field" name="inputField" rows="1" autocapitalize="off" spellcheck="false" style="overflow:hidden" autofocus></textarea>
+
+                    <button id="reset">redo</button>
+                </div>                
+            </section>
+
+            <!-- Trigger/Open The Modal -->
+            <button id="themeModalButton">themes</button>
+            
+            <!-- The Modal itself -->
+            <div id="themeModal" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <button class="themeButton" id="light" onclick="theme(this);">Light</button>
+                    <button class="themeButton" id="dark" onclick="theme(this);">Dark</button>
+                    <button class="themeButton" id="rosepine" onclick="theme(this);">Rosé Pine</button>
+                    <button class="themeButton" id="rosepinemoon" onclick="theme(this);">Rosé Pine Moon</button>
+                    <button class="themeButton" id="rosepinedawn" onclick="theme(this);">Rosé Pine Dawn</button>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>
