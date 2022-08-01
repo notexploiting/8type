@@ -2,7 +2,12 @@ let interval;
 let seconds = 0;
 let correct = 0;
 let incorrect = 0;
-let timerRunning = false;
+let timerRunning = false; 
+
+//this is the complete URL: window.location.origin
+//window.location.origin but without http/https window.location.host
+//Set the base href to whatever is being used
+document.querySelector("#baseHref").href = window.location.origin;
 
 // Match text entered with the paragraph
 function spellCheck() {
