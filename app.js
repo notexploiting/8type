@@ -3,6 +3,7 @@ let seconds = 0;
 let correct = 0;
 let incorrect = 0;
 let timerRunning = false; 
+let testLength = 10;
 
 //this is the complete URL: window.location.origin
 //window.location.origin but without http/https window.location.host
@@ -67,7 +68,7 @@ function reset() {
     document.querySelector("#input-field").value = "";
     document.querySelector("#input-field").focus();
     document.querySelector("#paragraph").style.borderColor = "#6e6a86";
-    document.querySelector("#paragraph").innerHTML = randomText(10);
+    document.querySelector("#paragraph").innerHTML = randomText(testLength);
 }
 
 function calculateAcc() {
@@ -91,7 +92,7 @@ function randomText(size) {
     return sentence;
 }
 
-//Modal scripts
+//Theme modal scripts
 let themeModal = document.querySelector("#themeModal");
 let themeModalButton = document.querySelector("#themeModalButton");
 let span = document.getElementsByClassName("close")[0];
@@ -100,13 +101,27 @@ themeModalButton.onclick = function() {
     themeModal.style.display = "block";
 }
 
-span.onclick = function() {
-    themeModal.style.display = "none";
-}
-
 function theme(thme) {
     document.querySelector("#theme").href = "themes/" + thme.id + ".css";
     console.log(thme.id);
+}
+
+//Settings modal scripts
+let settingsModal = document.querySelector("#settingsModal");
+let settingsModalButton = document.querySelector("#settingsModalButton");
+
+settingsModalButton.onclick = function() {
+    settingsModal.style.display = "block";
+}
+
+function changeTestLength(l) {
+    testLength = l.id;
+    reset();
+}
+
+span.onclick = function() {
+    themeModal.style.display = "none";
+    settingsModal.style.display = "none";
 }
 
 // Event listeners
