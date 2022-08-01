@@ -9,8 +9,8 @@
         <link rel="icon" href="img/icon.png">
         <script src="app.js" async></script>
         <!-- change the base href to the local host while testing, otherwise to the address of the website itself -->
-        <base href="http://127.0.0.1:5500/">
-        <title>type</title>
+        <base id="baseHref" href="http://127.0.0.1:3000/">
+        <title>8type</title>
     </head>
 
     <style>
@@ -21,7 +21,7 @@
 
     <body onload="reset()">
         <header class="title">
-            <h1>type</h1>
+            <h1>8type</h1>
         </header>
         
         <main>
@@ -58,6 +58,12 @@
                     <button class="themeButton" id="rosepine" onclick="theme(this);">Rosé Pine</button>
                     <button class="themeButton" id="rosepinemoon" onclick="theme(this);">Rosé Pine Moon</button>
                     <button class="themeButton" id="rosepinedawn" onclick="theme(this);">Rosé Pine Dawn</button>
+                </div>
+            </div>
+
+            <div id="settingsModal" class="modal">
+                <div class="modal-content">
+                    <button class=""
                 </div>
             </div>
         </main>
