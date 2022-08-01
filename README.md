@@ -1,6 +1,6 @@
 # puretype
 
-8type is a minimalistic typing test website built on HTML, CSS, and JavaScript. 
+puretype is a minimalistic typing test website built on HTML, CSS, and JavaScript. 
 
 a public link will be released later with GitHub pages, but you can test this yourself:
 1. download and extract the source code ZIP
