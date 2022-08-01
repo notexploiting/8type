@@ -1,4 +1,4 @@
-# 8type
+# puretype
 
 8type is a minimalistic typing test website built on HTML, CSS, and JavaScript. 
 
