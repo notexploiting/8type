@@ -46,6 +46,7 @@
 
             <!-- Trigger/Open The Modal -->
             <button id="themeModalButton">themes</button>
+            <button id="settingsModalButton">settings</button>
             
             <!-- The Modal itself -->
             <div id="themeModal" class="modal">
@@ -63,7 +64,13 @@
 
             <div id="settingsModal" class="modal">
                 <div class="modal-content">
-                    <button class=""
+                    <span class="close">&times;</span>
+                    <button class="testLengthButton" id="5" onclick="changeTestLength(this);">5</button>
+                    <button class="testLengthButton" id="10" onclick="changeTestLength(this);">10</button>
+                    <button class="testLengthButton" id="25" onclick="changeTestLength(this);">25</button>
+                    <button class="testLengthButton" id="50" onclick="changeTestLength(this);">50</button>
+                    <button class="testLengthButton" id="100" onclick="changeTestLength(this);">100</button>
+                    <button class="testLengthButton" id="200" onclick="changeTestLength(this);">200</button>
                 </div>
             </div>
         </main>
