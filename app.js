@@ -95,7 +95,7 @@ function randomText(size) {
 //Theme modal scripts
 let themeModal = document.querySelector("#themeModal");
 let themeModalButton = document.querySelector("#themeModalButton");
-let span = document.getElementsByClassName("close")[0];
+let themeSpan = document.getElementsByClassName("close")[0];
 
 themeModalButton.onclick = function() {
     themeModal.style.display = "block";
@@ -106,9 +106,14 @@ function theme(thme) {
     console.log(thme.id);
 }
 
+themeSpan.onclick = function() {
+    themeModal.style.display = "none";
+}
+
 //Settings modal scripts
 let settingsModal = document.querySelector("#settingsModal");
 let settingsModalButton = document.querySelector("#settingsModalButton");
+let settingsSpan = document.getElementsByClassName("close")[1];
 
 settingsModalButton.onclick = function() {
     settingsModal.style.display = "block";
@@ -119,8 +124,7 @@ function changeTestLength(l) {
     reset();
 }
 
-span.onclick = function() {
-    themeModal.style.display = "none";
+settingsSpan.onclick = function() {
     settingsModal.style.display = "none";
 }
 
