@@ -4,6 +4,7 @@ let correct = 0;
 let incorrect = 0;
 let timerRunning = false; 
 let testLength = 10;
+let isMute = false;
 
 //this is the complete URL: window.location.origin
 //window.location.origin but without http/https window.location.host
@@ -17,6 +18,11 @@ function spellCheck() {
 
     let textEntered = input.value;
     let textMatch = paragraph.substring(0, textEntered.length);
+
+    let hitsound = new Audio("sound/nk-cream_a.wav");
+    if (!isMute) {
+        hitsound.play();
+    }
 
     // if the entered text completely matches up with the original paragraph
     if (textEntered == paragraph) {
@@ -126,6 +132,17 @@ function changeTestLength(l) {
 
 settingsSpan.onclick = function() {
     settingsModal.style.display = "none";
+}
+
+let soundMuteCheckBox = document.querySelector("#soundMuteCheckBox");
+soundMuteCheckBox.onclick = function() {
+    if (soundMuteCheckBox.checked == true) {
+        isMute = true;
+        console.log(isMute);
+    } else {
+        isMute = false;
+        console.log(isMute);
+    }
 }
 
 // Event listeners
