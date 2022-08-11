@@ -134,6 +134,7 @@ settingsSpan.onclick = function() {
     settingsModal.style.display = "none";
 }
 
+//Sound FX
 let soundMuteCheckBox = document.querySelector("#soundMuteCheckBox");
 soundMuteCheckBox.onclick = function() {
     if (soundMuteCheckBox.checked == true) {
