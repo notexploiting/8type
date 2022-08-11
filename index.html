@@ -17,6 +17,10 @@
         #themeModal {
             display: none;
         }
+
+        #input-field {
+            text-align: left;
+        }
     </style>
 
     <body onload="reset()">
@@ -44,9 +48,13 @@
                 </div>                
             </section>
 
-            <!-- Trigger/Open The Modal -->
-            <button id="themeModalButton">themes</button>
-            <button id="settingsModalButton">settings</button>
+            <div class="bottomNav">
+                <!-- Trigger/Open The Modal -->
+                <button id="themeModalButton">themes</button>
+                <button id="settingsModalButton">settings</button>
+                <button><a id="docsButton" href='https://github.com/notexploiting/puretype' target="_blank">docs</a></button>
+            </div>
+            
             
             <!-- The Modal itself -->
             <div id="themeModal" class="modal">
@@ -65,12 +73,15 @@
             <div id="settingsModal" class="modal">
                 <div class="modal-content">
                     <span class="close">&times;</span>
-                    <button class="testLengthButton" id="5" onclick="changeTestLength(this);">5</button>
-                    <button class="testLengthButton" id="10" onclick="changeTestLength(this);">10</button>
-                    <button class="testLengthButton" id="25" onclick="changeTestLength(this);">25</button>
-                    <button class="testLengthButton" id="50" onclick="changeTestLength(this);">50</button>
-                    <button class="testLengthButton" id="100" onclick="changeTestLength(this);">100</button>
-                    <button class="testLengthButton" id="200" onclick="changeTestLength(this);">200</button>
+                    <div>
+                        <label>Test Length</label>
+                        <button class="testLengthButton" id="5" onclick="changeTestLength(this);">5</button>
+                        <button class="testLengthButton" id="10" onclick="changeTestLength(this);">10</button>
+                        <button class="testLengthButton" id="25" onclick="changeTestLength(this);">25</button>
+                        <button class="testLengthButton" id="50" onclick="changeTestLength(this);">50</button>
+                        <button class="testLengthButton" id="100" onclick="changeTestLength(this);">100</button>
+                        <button class="testLengthButton" id="200" onclick="changeTestLength(this);">200</button>
+                    </div>
 
                     <input type="checkbox" name="mute" id="soundMuteCheckBox">
                     <label for="mute">mute</label>
