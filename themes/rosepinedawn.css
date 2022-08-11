@@ -1,3 +1,13 @@
+/*
+Theme comes from the Rosé Pine Dawn palette
+https://rosepinetheme.com/palette
+base: #faf4ed
+surface: #fffaf3
+text: #575279
+muted: #9893a5
+*/
+
+
 body {
     background-color: #faf4ed; /* base */
     color: #575279; /* text */
@@ -7,7 +17,7 @@ body {
     background-color: #fffaf3; /* surface */ 
 }
 
-#input-field, #reset, #themeModalButton {
+#input-field, #reset {
     background-color: #faf4ed; /* base */
     color: #575279; /* text */
     border-color: #9893a5; /* muted */
